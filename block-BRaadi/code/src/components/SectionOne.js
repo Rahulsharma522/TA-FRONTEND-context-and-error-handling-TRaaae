@@ -3,7 +3,7 @@ import React from "react";
 class SectionOne extends React.Component {
   state = {
     value: "Hello World!",
-  };
+  }; 
   render() {
     return (
       <div className="box s1-a">
@@ -16,9 +16,10 @@ class SectionOne extends React.Component {
             {this.state.value.toLowerCase().split("").join(" ")}
           </span>
         </p>
+        
         <button onClick={() => this.setState({ value: "Sam" })}>
           Change input to Sam
-        </button>
+        </button> 
         <button onClick={() => this.setState({ value: {} })}>
           Change input to an object
         </button>
@@ -31,7 +32,7 @@ class SectionOne extends React.Component {
           the screen go blank or it will show an overlay error
           (create-react-app).
         </p>
-
+          
         <p className="small">
           Error boundary will fix this problem. Make it in such a way that when
           clicked on the second button it will display a message saying
@@ -43,3 +44,4 @@ class SectionOne extends React.Component {
 }
 
 export default SectionOne;
+  
