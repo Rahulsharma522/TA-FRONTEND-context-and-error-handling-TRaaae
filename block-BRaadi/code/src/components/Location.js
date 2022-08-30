@@ -34,7 +34,7 @@ class Location extends React.Component {
           app break.
         </p>
         <p className="small">
-          Fix it using the error boundary and display a friendly message.
+          Fix it using the error boundary and display a friendly message.This is my first repository of Hello world.
         </p>
         <div>
           <div>
@@ -59,7 +59,9 @@ const LocationCard = (props) => {
     <div>
       <hr />
       <p>
+      
         <b>Name:</b> {props.name.toUpperCase()}
+
       </p>
       <p>
         <b>Zone:</b> {props.zone}
